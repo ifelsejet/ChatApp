@@ -4,7 +4,7 @@ var http = require('http').createServer(app);
 
 //Define route handler
 app.get('/', (req, res) => {
-  res.send('<h1>Hello world</h1>');
+  res.sendFile(__dirname + '/index.html');
 });
 
 //Define port
